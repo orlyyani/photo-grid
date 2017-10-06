@@ -1,6 +1,6 @@
 {
   "name": "vue-photo-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This component let you automatically arrange the photos depending on their clusters.",
   "main": "index.js",
   "scripts": {
