@@ -74,7 +74,7 @@
 			},
 
 			pareseExcessText(){
-				this.image_excess = this.excessText.replace('{{count}}', this.$slots.default.length);
+				this.image_excess = this.excessText.replace('{{count}}', this.$slots.default.length - 4);
 			}
 		}
 	}
