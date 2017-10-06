@@ -2,6 +2,17 @@
 
 This component let you automatically arrange the photos depending on their clusters.
 
+
+# Examples
+
+For examples, refer to [the demo page](https://orlyyani.github.io/photo-grid/#/).
+
+# NPM
+
+```
+ npm install vue-photo-grid
+```
+
 # Features!
 
   - Arrange depending on their numbers.
@@ -22,7 +33,7 @@ Vue.use(PhotoGrid);
 ```
 <template>
   <div id="photo-grid">
-    <photo-grid :box-height="500" :box-width="500" :excess-text="'+ {{count}}'" :size-unit="'px'" v-on:clickExcess="triggerClick">
+    <photo-grid :box-height="'200px'" :box-width="'20%'" :excess-text="'+ {{count}}'" v-on:clickExcess="triggerClick">
       <img v-for="imahe in images" v-bind:src="imahe.url"/>
     </photo-grid>
   </div>
@@ -71,7 +82,7 @@ All read more options were converted to props to be able use them in the `vue-ph
 
 *Usage*
 ```html
-<photo-grid :box-height="500" :box-width="500" :excess-text="'+ {{count}}'" :size-unit="'px'" v-on:clickExcess="triggerClick">
+<photo-grid :box-height="'500px'" :box-width="'500px'" :excess-text="'+ {{count}}'" v-on:clickExcess="triggerClick">
   <img v-for="imahe in images" v-bind:src="imahe.url"/>
 </photo-grid>
 ```
@@ -81,10 +92,21 @@ All read more options were converted to props to be able use them in the `vue-ph
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
-| `boxWidth` | `Number` | `200` | let you edit the grid's width depending on your ideal choice you can change the size unit (pixels or percentage) by adding `sizeUnit`. | 
-| `boxHeight` | `Number` | `200` | let you edit the grid's Height depending on your ideal choice you can change the size unit (pixels or percentage) by adding `sizeUnit`. |
+| `boxWidth` | `String` | `200px` | let you edit the grid's width depending on your ideal choice you can change the size unit (pixels or percentage)  | 
+| `boxHeight` | `String` | `200px` | let you edit the grid's Height depending on your ideal choice you can change the size unit (pixels or percentage) |
 | `boxBorder` | `Number` | `0` |  This feature makes you add the border og the grid.
-| `sizeUnit` | `String` | `px` | It defines the grid's `boxWidth` or `boxHeight` unit by choosing whether pixels or by bercentage.
+| `excessText` | `String` | `View more {{count}} images` |  You can change the text whenever number of your image exceeds 4 and above.
+
+*Note:*
+You can customize the text between the `{{count}}` in the `excessText`. Note the the `{{count}}` is the default value of the excess number in your list of images.
+
+# Events
+
+
+| Name | Description |
+|--------|-------------|
+| `clickExcess` | You can pass your method here whenever you click the excess images number. | 
+
 
 # License
 

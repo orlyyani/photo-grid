@@ -11,18 +11,17 @@
 <script>
 	module.exports = {
 		props: {
-			boxWidth: { type: Number, default: 200 },
-			boxHeight: { type: Number, default: 200 },
+			boxWidth: { type: String, default: 'auto' },
+			boxHeight: { type: String, default: '200px' },
 			boxBorder: { type: Number, default: 0 },
-			sizeUnit: { type: String, default: 'px' },
 			excessText: { type: String, default: 'View more {{count}} images'}
 		},
 
 		data: function(){
 			return{
 				styles: {
-					width: this.boxWidth + this.sizeUnit,
-					height: this.boxHeight + this.sizeUnit,
+					width: this.boxWidth,
+					height: this.boxHeight,
 					'border-radius': this.boxBorder + 'px',
 					overflow: 'hidden'
 				},

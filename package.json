@@ -1,0 +1,32 @@
+{
+  "name": "vue-photo-grid",
+  "version": "1.0.0",
+  "description": "This component let you automatically arrange the photos depending on their clusters.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orlyyani/photo-grid.git"
+  },
+  "keywords": [
+    "vue",
+    "vuejs",
+    "photo",
+    "grid",
+    "photogrid",
+    "album",
+    "arrange",
+    "vue.js",
+    "js",
+    "javascript",
+    "npm"
+  ],
+  "author": "Lyor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orlyyani/photo-grid/issues"
+  },
+  "homepage": "https://github.com/orlyyani/photo-grid#readme"
+}
