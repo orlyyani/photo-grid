@@ -1,5 +1,5 @@
 <template>
-	<div id="grid-component">
+	<div class="grid-component">
 		<div class="__image_container" v-bind:style="styles">
 			<slot>
     	</slot>
